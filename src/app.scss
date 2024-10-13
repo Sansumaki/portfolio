@@ -1,0 +1,16 @@
+$primary-color: #fff;
+$secondary-color: #d1d1d1;
+$font-stack: Helvetica, sans-serif;
+$font-size: 1em;
+$big-font-size: 2em;
+
+$gradient-start: #000000;
+$gradient-end: #140a06;
+
+body {
+    background: linear-gradient(15deg, $gradient-start, $gradient-end);
+    min-height: 100vh;
+    color: $primary-color;
+    font-family: $font-stack;
+    font-size: $font-size;
+}
