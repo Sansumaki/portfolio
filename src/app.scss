@@ -1,16 +1,24 @@
 $primary-color: #fff;
 $secondary-color: #d1d1d1;
-$font-stack: Helvetica, sans-serif;
+$accent-color: #ff0000;
+$accent-color-2: #00ff00;
+$accent-color-3: #0000ff;
+$primary-font: 'fonts/Alef-Regular.ttf';
+$secondary-font: 'fonts/Exo-VariableFont_wght.ttf';
+$accent-font: 'fonts/Biryani-Regular.ttf';
 $font-size: 1em;
 $big-font-size: 2em;
 
-$gradient-start: #000000;
-$gradient-end: #140a06;
-
 body {
-    background: linear-gradient(15deg, $gradient-start, $gradient-end);
     min-height: 100vh;
     color: $primary-color;
-    font-family: $font-stack;
+    font-family: $accent-font;
     font-size: $font-size;
 }
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
