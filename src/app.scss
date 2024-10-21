@@ -1,8 +1,8 @@
-$primary-color: #fff;
-$secondary-color: #d1d1d1;
-$accent-color: #ff0000;
-$accent-color-2: #00ff00;
-$accent-color-3: #0000ff;
+$primary-color: #000;
+$secondary-color: #D63924;
+$accent-color: #591511;
+$accent-color-2: #AF7E2D;
+$accent-color-3: #58744F;
 $font-family-xl: "Alef";
 $font-family-md: "Exo";
 $font-family: "Biryani";
@@ -45,6 +45,8 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: white;
 }
 
 html {
@@ -78,4 +80,26 @@ h3 {
     -webkit-align-items: $align;
     -ms-flex-align: $align;
     align-items: $align;
+}
+
+@mixin justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@mixin justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@mixin absolute-center {    
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
