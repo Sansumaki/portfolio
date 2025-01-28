@@ -16,7 +16,7 @@
 </main>
 
 <footer>
-	<p>&copy; {currentYear} S.Schmerek</p>
+	<p>&copy; {currentYear} Sebastian Schmerek</p>
 </footer>
 
 <style lang="scss">
