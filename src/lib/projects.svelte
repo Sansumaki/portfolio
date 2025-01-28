@@ -6,12 +6,10 @@
 	<div class="project">
 		<h3>Project Title 1</h3>
 		<p>Short description of the project.</p>
-		<a href="#">View Project</a>
 	</div>
 	<div class="project">
 		<h3>Project Title 2</h3>
 		<p>Short description of the project.</p>
-		<a href="#">View Project</a>
 	</div>
 </Section>
 

@@ -13,7 +13,7 @@
 	@import '../variables.scss';
 
 	.title {
-		background-image: url('desktop.webp');
+		background-image: url('/desktop.webp');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: auto;
