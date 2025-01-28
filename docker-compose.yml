@@ -7,7 +7,7 @@ services:
   external:
     container_name: external
     # The name of the image that will be created when building this container
-    image: external-website:latest
+    image: website:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -16,13 +16,13 @@ services:
       # Internal server error messages will not send stacktrace to the browser in production
       - NODE_ENV=production
       # Sets the timezone of the containers OS
-      - TZ=Pacific/Auckland
+      - TZ=Europa/Berlin
     # Points to a file with the sensitive environment variables
     env_file:
       - .env
     restart: unless-stopped
-    ports:
-      - 3000:5050
+    #ports:
+    #  - 3000:5050
     labels:
       # Stops watchtower from updating this container
       - "com.centurylinklabs.watchtower.enable=false"
