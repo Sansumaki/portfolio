@@ -3,11 +3,11 @@
 </script>
 
 <Section key="contact" title="<contact />">
-	<form>
-		<input type="text" placeholder="Your Name" required />
-		<input type="email" placeholder="Your Email" required />
-		<textarea placeholder="Your Message" required></textarea>
-		<button type="submit">Send Message</button>
+	<form method="post">
+		<input name="name" type="text" placeholder="Your Name" required />
+		<input name="email" type="email" placeholder="Your Email" required />
+		<textarea name="message" placeholder="Your Message" required></textarea>
+		<button type="submit">Send</button>
 	</form>
 </Section>
 
@@ -24,6 +24,9 @@
 		margin: 10px 0;
 		border: 1px solid #ccc;
 		border-radius: 5px;
+	}
+	form textarea {
+		height: 150px;
 	}
 
 	form button {
