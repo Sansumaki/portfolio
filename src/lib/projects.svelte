@@ -21,10 +21,4 @@
 	.project h3 {
 		margin: 10px 0;
 	}
-
-	.project a {
-		text-decoration: none;
-		color: #333;
-		font-weight: bold;
-	}
 </style>
