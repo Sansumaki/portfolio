@@ -1,13 +1,15 @@
 <script>
 	import Section from '$lib/section.svelte';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
-<Section title="<kontakt />">
+<Section title="<{m.contact()} />">
+	{m.contact_text()}
 	<form method="post">
-		<input name="name" type="text" placeholder="Your Name" required />
-		<input name="email" type="email" placeholder="Your Email" required />
-		<textarea name="message" placeholder="Your Message" required></textarea>
-		<button type="submit">Send</button>
+		<input name="name" type="text" placeholder={m.contact_name()} required />
+		<input name="email" type="email" placeholder={m.contact_email()} required />
+		<textarea name="message" placeholder={m.contact_message()} required></textarea>
+		<button type="submit">{m.contact_send()}</button>
 	</form>
 </Section>
 

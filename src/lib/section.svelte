@@ -11,7 +11,7 @@
 <div class="container">
 	<div>
 		{#if title}
-			<h1>{title}</h1>
+			<h1>{title.replace(/[Ää]/g, "ae").replace(/[Öö]/g, "oe").replace(/[Üü]/g, "ue")}</h1>
 		{/if}
 		{@render children?.()}
 	</div>

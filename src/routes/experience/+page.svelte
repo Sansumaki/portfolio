@@ -1,9 +1,10 @@
 <script lang="ts">
 	import SectionLine from '$lib/section-line.svelte';
 	import Section from '$lib/section.svelte';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
-<Section title="<erfahrung />">
+<Section title="<{m.experience()} />">
 	<SectionLine
 		jobtitle="Expert Software Engineer"
 		company="Reishauer AG"
