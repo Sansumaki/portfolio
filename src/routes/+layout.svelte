@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 	import { i18n } from '$lib/i18n';
-
 	import Header from '$lib/header.svelte';
+	import * as m from '$lib/paraglide/messages';
+
+	let { children }: Props = $props();
 
 	const currentYear = new Date().getFullYear();
 </script>
@@ -20,7 +22,7 @@
 		name="keywords"
 		content="Sebastian, Schmerek, Software, Engineer, IT, Spezialist, Expert, Webdevelopment, Deutschland, Lüneburg, Hamburg, Erfahrung, Experience"
 	/>
-	<meta name="author" content="Sebastian Schmerek | San" />
+	<meta name="author" content="Sebastian Schmerek | IT-San" />
 </svelte:head>
 
 <ParaglideJS {i18n}>
@@ -30,14 +32,14 @@
 		</header>
 
 		<main>
-			<slot />
+			{@render children?.()}
 		</main>
 
 		<footer>
 			<p>&copy; {currentYear} Sebastian Schmerek</p>
 			<p>
-				<a href="/impressum"><span>Impressum</span></a>
-				<a href="/datenschutzerklaerung"><span>Datenschutzerklärung</span></a>
+				<a href="/imprint"><span>{m.impressum()}</span></a>
+				<a href="/privacy_policy"><span>{m.privacy_policy()}</span></a>
 			</p>
 		</footer>
 	</div>

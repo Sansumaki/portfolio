@@ -1,3 +1,11 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format"
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+
+    "impressum":"Inprint",
+    "privacy_policy":"Privacy Policy",
+    "home":"Home",
+    "home_text": "Hello, I am a passionate software developer and IT expert with more than 20 years of experience.",
+    "about":"About me",
+    "contact":"Contact",
+    "experience":"Experience"
 }

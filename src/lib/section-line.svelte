@@ -1,9 +1,19 @@
 <script lang="ts">
-	export let jobtitle: string;
-	export let company: string | undefined = undefined;
-	export let from: string | undefined = undefined;
-	export let to: string | undefined = undefined;
-	export let place: string | undefined = undefined;
+	interface Props {
+		jobtitle: string;
+		company?: string | undefined;
+		from?: string | undefined;
+		to?: string | undefined;
+		place?: string | undefined;
+	}
+
+	let {
+		jobtitle,
+		company = undefined,
+		from = undefined,
+		to = undefined,
+		place = undefined
+	}: Props = $props();
 </script>
 
 <div class="row-conatiner">

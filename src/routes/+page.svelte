@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Section from '$lib/section.svelte';
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <div class="title"></div>
@@ -7,9 +7,7 @@
 	<div>
 		<h1 class="name">Sebastian Schmerek</h1>
 		<h2>Software Engineer, Web Developer & IT Expert</h2>
-		<p>
-			Hallo, ich bin ein passionierter Softwareentwickler und IT-Experte mit mehr als 20 Jahren Erfahrung.
-		</p>
+		<p>{m.home_text()}</p>
 	</div>
 </div>
 

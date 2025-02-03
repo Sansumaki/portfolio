@@ -1,5 +1,9 @@
 <script>
 	import Logo from './logo.svelte';
+	import { availableLanguageTags, languageTag } from "$lib/paraglide/runtime.js"
+	import { i18n } from '$lib/i18n'
+	import { page } from '$app/stores'
+	import * as m from '$lib/paraglide/messages';
 </script>
 
 <div class="header-container">
@@ -13,13 +17,25 @@
 			<nav>
 				<div>
 					<ul class="prim-menu">
-						<li><a href="/"><span>//Startseite</span></a></li>
-						<li><a href="/about"><span>//Über Mich</span></a></li>
-						<li><a href="/experience"><span>//Erfahrung</span></a></li>
-						<li><a href="/contact"><span>//Kontakt</span></a></li>
+						<li><a href="/"><span>//{m.home()}</span></a></li>
+						<li><a href="/about"><span>//{m.about()}</span></a></li>
+						<li><a href="/experience"><span>//{m.experience()}</span></a></li>
+						<li><a href="/contact"><span>//{m.contact()}</span></a></li>
 					</ul>
 				</div>
 			</nav>
+		</div>
+		<div>
+			{#each availableLanguageTags as lang, i}
+				<!-- the hreflang attribute decides which language the link points to -->
+				{#if i > 0}<span style="margin: 0 0.5em">|</span>{/if}<a
+					href={i18n.route($page.url.pathname)}
+					hreflang={lang}
+					aria-current={lang === languageTag() ? 'page' : undefined}
+				>
+					{lang}
+				</a>
+			{/each}
 		</div>
 	</div>
 </div>
@@ -90,12 +106,12 @@
 							font-family: 'Roboto mono', monospace;
 							font-size: 1.1rem;
 							letter-spacing: -1px;
-                            counter-reset: number;
+							counter-reset: number;
 							@include display-flex;
 							@include align-items(center);
 
 							li {
-                                counter-increment: number;
+								counter-increment: number;
 								a {
 									padding: 0 1.3vw;
 									height: 100%;
