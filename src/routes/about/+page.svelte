@@ -2,7 +2,8 @@
 	import Section from '$lib/section.svelte';
 </script>
 
-<Section key="about" title="<about me />">
+<Section title="<über mich />">
+	<img src="/images/portrait.jpeg" alt="Sebastian Schmerek" width="250rem" />
 	<p>
 		Passionierter und lösungsorientierter Software Engineer und IT-Enthusiast seit einem viertel
 		Jahrhundert.<br />
@@ -16,7 +17,8 @@
 </Section>
 
 <style lang="scss">
-	p {
-		color: silver;
+	img {
+		border-radius: 15%;
+		margin: 0 0 2rem 0;
 	}
 </style>

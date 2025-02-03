@@ -1,31 +1,49 @@
 <script lang="ts">
-	export let key: string;
 	export let title: string | undefined = undefined;
 </script>
 
-<section id={key}>
+<div class="title"></div>
+<div class="container">
 	<div>
 		{#if title}
-			<h2>{title}</h2>
+			<h1>{title}</h1>
 		{/if}
 		<slot></slot>
 	</div>
-</section>
+</div>
 
 <style lang="scss">
-	section {
-		padding: 40px 20px;
-		margin-top: calc(-1 * var(--main-top));
-		padding-top: calc(20px + var(--main-top));
-		text-align: center;
-		min-height: 100vh;
-		width: 100%;
-		display: table;
+	@import '../variables.scss';
+	.title {
+		background-image: url('/images/workingbackground.jpeg');
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		z-index: -1;
 
-		div {
-			display: table-cell;
-			vertical-align: middle;
-			text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+
+		mask-image: linear-gradient(rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.05) 60%, transparent);
+		mask-size: 100%;
+		mask-position: center;
+		mask-repeat: no-repeat;
+	}
+
+	.container {
+		padding: 0 5rem;
+		text-align: center;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		h1 {
+			margin-bottom: 2rem;
+			text-transform: lowercase;
 		}
 	}
 </style>

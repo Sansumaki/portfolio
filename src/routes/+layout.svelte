@@ -31,6 +31,10 @@
 
 	<footer>
 		<p>&copy; {currentYear} Sebastian Schmerek</p>
+		<p>
+			<a href="/impressum"><span>Impressum</span></a>
+			<a href="/datenschutzerklaerung"><span>Datenschutzerklärung</span></a>
+		</p>
 	</footer>
 </div>
 
@@ -39,30 +43,21 @@
 
 	.container {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(2, 100px);
-		background-color: beige;
+		grid-template-rows: auto 1fr auto;
 		gap: 10px;
 		grid-template-areas:
-			'header header header'
-			'nav nav nav'
-			'aside content content'
-			'aside section section'
-			'footer footer footer';
+			'header'
+			'content'
+			'footer';
 		min-height: 100vh;
-	}
-	.container > div {
-		background-color: green;
-		font-size: 40px;
 	}
 
 	header {
 		grid-area: header;
-		background-color: green;
 		vertical-align: middle;
 	}
 
-	main :global(section) {
+	main {
 		grid-area: content;
 	}
 
@@ -72,5 +67,36 @@
 		padding: 20px 0;
 		background-color: #181818;
 		color: #fff;
+		a {
+			text-decoration: none;
+			color: silver;
+
+			&:hover {
+				color: white;
+			}
+			span {
+				font-size: small;
+				margin-left: 1.5em;
+				margin-right: 0.5em;
+				position: relative;
+				&:before {
+					content: '//';
+					display: inline-block;
+					font-weight: 700;
+					width: auto;
+					color: silver;
+					top: 0.3em;
+					left: -1em;
+					line-height: 1em;
+					font-size: 1em;
+					position: absolute;
+					height: auto;
+					opacity: 0.75;
+				}
+			}
+		}
+		p {
+			font-size: small;
+		}
 	}
 </style>

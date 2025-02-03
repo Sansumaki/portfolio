@@ -2,47 +2,56 @@
 	import Section from '$lib/section.svelte';
 </script>
 
-<Section key="home">
-	<div class="title"></div>
-	<h1>Sebastian Schmerek</h1>
-	<h2>Software Engineer, Web Developer & IT Expert</h2>
-	<p>Hello, I am a software engineer and computer specialist with more than 20 years of experience.</p>
-</Section>
+<div class="title"></div>
+<div class="container">
+	<div>
+		<h1 class="name">Sebastian Schmerek</h1>
+		<h2>Software Engineer, Web Developer & IT Expert</h2>
+		<p>
+			Hallo, ich bin ein passionierter Softwareentwickler und IT-Experte mit mehr als 20 Jahren Erfahrung.
+		</p>
+	</div>
+</div>
 
 <style lang="scss">
 	@import '../variables.scss';
 
 	.title {
-		background-image: url('/desktop.webp');
+		background-image: url('/images/hellobackground.jpeg');
 		background-repeat: no-repeat;
-		background-position: center;
-		background-size: auto;
-		height: 30em;
+		background-position: top;
+		background-size: cover;
+		z-index: -1;
 
-		mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.2), transparent);
+		position: absolute;
+		left: 0;
+		height: 80vh;
+		width: 100%;
+
+		mask-image: linear-gradient(rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.05) 50%, transparent);
 		mask-size: 100%;
 		mask-position: center;
 		mask-repeat: no-repeat;
 	}
 
-	h1 {
-		margin-top: -2em;
-		margin-bottom: 0.5em;
-		font-size: $font-size-2xl;
-		font-family: $font-family-xl;
-		font-variant: small-caps;
-	}
-	h2 {
-		font-size: $font-size-md;
-		font-family: $font-family-md;
-		text-transform: uppercase;
-		font-weight: normal;
-	}
-	p {
-		margin-top: 1em;
-		font-size: $font-size;
-		font-family: $font-family;
-		text-transform: uppercase;
-		font-weight: normal;
+	.container {
+		padding: 0 5rem;
+		text-align: center;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		h1 {
+			margin-bottom: 2rem;
+			font-size: $font-size-2xl;
+			font-family: $font-family-xl;
+			font-variant: small-caps;
+		}
+
+		h2 {
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+		}
 	}
 </style>

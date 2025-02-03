@@ -2,7 +2,7 @@
 	import Section from '$lib/section.svelte';
 </script>
 
-<Section key="contact" title="<contact />">
+<Section title="<kontakt />">
 	<form method="post">
 		<input name="name" type="text" placeholder="Your Name" required />
 		<input name="email" type="email" placeholder="Your Email" required />

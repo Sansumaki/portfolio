@@ -21,17 +21,34 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 h1 {
-    font-size: $font-size-xl;
+    margin-bottom: 2rem;
+    font-size: xxx-large;
     font-family: $font-family-xl;
+    letter-spacing: 1.4pt;
 }
 
 h2 {
-    font-size: $font-size-xl;
-    font-family: $font-family-xl;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: xx-large;
+    font-family: $font-family-md;
+    letter-spacing: 1.2pt;
 }
 
 h3 {
-    font-size: $font-size-md;
+    font-size: xx-large;
     font-family: $font-family-md;
+    letter-spacing: 1.2pt;
+}
+
+p {
+    letter-spacing: 1pt;
+    font-size: normal;
+    font-family: $font-family;
+    color: silver;
 }

@@ -13,10 +13,10 @@
 			<nav>
 				<div>
 					<ul class="prim-menu">
-						<li><a href="/"><span>//home</span></a></li>
-						<li><a href="/about"><span>//about</span></a></li>
-						<li><a href="/experience"><span>//experience</span></a></li>
-						<li><a href="/contact"><span>//contact</span></a></li>
+						<li><a href="/"><span>//Startseite</span></a></li>
+						<li><a href="/about"><span>//Über Mich</span></a></li>
+						<li><a href="/experience"><span>//Erfahrung</span></a></li>
+						<li><a href="/contact"><span>//Kontakt</span></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -45,10 +45,10 @@
 	}
 
 	.header-container {
-		padding: 0 4.4vh;
+		padding: 0 2rem;
 		position: relative;
 		z-index: 1;
-		height: 14vh;
+		height: 6rem;
 
 		> div {
 			height: 100%;
