@@ -1,11 +1,16 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format",
-
-    "impressum":"Inprint",
-    "privacy_policy":"Privacy Policy",
-    "home":"Home",
-    "home_text": "Hello, I am a passionate software developer and IT expert with more than 20 years of experience.",
-    "about":"About me",
-    "contact":"Contact",
-    "experience":"Experience"
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"impressum": "Inprint",
+	"privacy_policy": "Privacy Policy",
+	"home": "Home",
+	"home_text": "Hello, I am a passionate software developer and IT expert with more than 20 years of experience.",
+	"about": "About me",
+	"about_text": "Passionate and solution-oriented software engineer and IT enthusiast for a quarter of a century.\nExcellent skills as a full-stack developer with a focus on quality and customer satisfaction.<br> High and long-standing expertise in development in various modern software languages such as .NET and JavaScript and a high level of understanding in software design and architecture.<br> Maintaining the development environment for the entire team is also not a challenge.<br> Efficient in any team constellation and always eager to learn new things.",
+	"contact": "Contact",
+	"contact_text": "Contact me if you have any questions or are interested in working together.",
+	"contact_name": "your name",
+	"contact_email": "your email",
+	"contact_message": "your message",
+	"contact_send": "Submit",
+	"experience": "Experience"
 }
