@@ -131,6 +131,7 @@
 
 	<h3>Empfänger eines Widerspruchs</h3>
 	<p>Sebastian Schmerek</p>
+	<p><a href="mailto:sebastian@schmerek.me">contact@it-san.dev</a></p>
 
 	<h2>Änderung unserer Datenschutzerklärung</h2>
 	<p>

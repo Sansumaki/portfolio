@@ -11,7 +11,6 @@
 	</p>
 	<h2>Kontakt</h2>
 	<p>
-		E-Mail: <a href="mailto:sebastian@schmerek.me">sebastian@schmerek.me</a><br />
-		Telefon: <a href="tel:0049">+49 </a>
+		E-Mail: <a href="mailto:sebastian@schmerek.me">contact@it-san.dev</a><br />
 	</p>
 </Section>
