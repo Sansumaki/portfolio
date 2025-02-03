@@ -1,5 +1,5 @@
 <script>
-	import Section from './section.svelte';
+	import Section from '$lib/section.svelte';
 </script>
 
 <Section key="contact" title="<contact />">

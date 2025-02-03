@@ -13,10 +13,10 @@
 			<nav>
 				<div>
 					<ul class="prim-menu">
-						<li><a href="#home"><span>//home</span></a></li>
-						<li><a href="#about"><span>//about</span></a></li>
-						<li><a href="#experience"><span>//experience</span></a></li>
-						<li><a href="#contact"><span>//contact</span></a></li>
+						<li><a href="/"><span>//home</span></a></li>
+						<li><a href="/about"><span>//about</span></a></li>
+						<li><a href="/experience"><span>//experience</span></a></li>
+						<li><a href="/contact"><span>//contact</span></a></li>
 					</ul>
 				</div>
 			</nav>

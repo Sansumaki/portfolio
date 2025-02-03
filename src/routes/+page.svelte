@@ -1,23 +1,48 @@
-<script>
-	import About from '$lib/about.svelte';
-	import Contact from '$lib/contact.svelte';
-	import Experience from '$lib/experience.svelte';
-	import Home from '$lib/home.svelte';
-	import Projects from '$lib/projects.svelte';
+<script lang="ts">
+	import Section from '$lib/section.svelte';
 </script>
 
+<Section key="home">
+	<div class="title"></div>
+	<h1>Sebastian Schmerek</h1>
+	<h2>Software Engineer, Web Developer & IT Expert</h2>
+	<p>Hello, I am a software engineer and computer specialist with more than 20 years of experience.</p>
+</Section>
 
-<svelte:head>
-	<title>Sebastian Schmerek | Software Engineer, Web Developer & IT Expert | Deutschland, Lüneburg, Hamburg</title>
-	<meta name="description" content="Sebastian Schmerek; A software Enginieer with passtion and a quarter of a century of experience. ">
-	<meta name="keywords" content="Sebastian, Schmerek, Software, Engineer, IT, Spezialist, Expert, Webdevelopment, Deutschland, Lüneburg, Hamburg, Erfahrung, Experience">
-	<meta name="author" content="Sebastian Schmerek | San">
-</svelte:head>
-<Home />
+<style lang="scss">
+	@import '../variables.scss';
 
-<About />
+	.title {
+		background-image: url('/desktop.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+		height: 30em;
 
-<Experience />
+		mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.2), transparent);
+		mask-size: 100%;
+		mask-position: center;
+		mask-repeat: no-repeat;
+	}
 
-<Contact />
-
+	h1 {
+		margin-top: -2em;
+		margin-bottom: 0.5em;
+		font-size: $font-size-2xl;
+		font-family: $font-family-xl;
+		font-variant: small-caps;
+	}
+	h2 {
+		font-size: $font-size-md;
+		font-family: $font-family-md;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+	p {
+		margin-top: 1em;
+		font-size: $font-size;
+		font-family: $font-family;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+</style>
