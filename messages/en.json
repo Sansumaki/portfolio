@@ -1,6 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"impressum": "Inprint",
+	"impressum_verantwortlich": "Responsibility",
 	"privacy_policy": "Privacy Policy",
 	"home": "Home",
 	"home_text": "Hello, I am a passionate software developer and IT expert with more than 20 years of experience.",
@@ -12,5 +13,10 @@
 	"contact_email": "your email",
 	"contact_message": "your message",
 	"contact_send": "Submit",
-	"experience": "Experience"
+	"experience": "Experience",
+	"experience_lehre": "<li>Assembling and testing circuits</li><li>Developing real-time software with microprocessors</li><li> Measuring and testing circuits</li>",
+	"experience_reishauer_02": "<li>Responsible for the migration of on-premise systems to cloud solutions</li><li> Designing, developing and implementing system architectures of software for CNC machine tools</li><li> Improving the performance of Sinumerik machine communication</li><li> Responsible for the upkeep and maintenance of DevOps infrastructure (Teamcity, Bitbucket, Jira, Confluence, ..)</li><li> moderator and coordinator of the DevOps team</li><li> Quality assurance of the software according to the state of the art (unit test, ...)</li><li> Development of a user interface for gear shaving machines (Sinumerik, .NET, WPF, ..)</li><li> Development of machine parameterization software (.NET, WPF, ..)</li><li> Mentor for DevOps systems (consulting, assistance, training)</li><li> Working in an agile project</li>",
+	"experience_reishauer_01": "<li>Development of a user interface for gear grinding machines (Sinumerik, .NET, WPF, ..)</li><li> Development of various solutions for e.g.:<ul><li> an analysis tool for the Sinumerik NC code to ensure quality</li><li> a text management software to simplify the translation of the software</li></ul></li><li> Responsible for setting up a DevOps infrastructure (e.g. continuous integration, knowledge database, issue tracking, web hosting)</li><li> Working in an agile team</li>",
+	"experience_ruag_01": "<li>Developing software for coordination, orchestration, tracking and monitoring of cyber-physical systems in training villages/simulators (.NET, WPF, Unity 3D, ..)</li><li> Developing software architecture and concept documentation</li><li> Responsible for DevOps (Azure Devops)</li><li> Functional testing of the software and ensuring software quality and guidelines using unit tests, test automation and code reviews</li>",
+	"experience_ruag_02": "<li>Responsible for DevOps (Azure Devops)</li><li> Technical responsibility for development work</li><li> Developing a powerful concept for the recording and playback of data streams in the edge network (BigData, DDS, ..)</li>"
 }
