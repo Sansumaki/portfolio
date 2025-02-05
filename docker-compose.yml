@@ -7,7 +7,7 @@ services:
     # The name of the image that will be created when building this container
     image: website:latest
     build:
-      context: ..
+      context: .
       dockerfile: Dockerfile
     user: "node"
     environment:
