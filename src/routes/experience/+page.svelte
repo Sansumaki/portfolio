@@ -73,19 +73,16 @@
 </Section>
 
 <style lang="scss">
-	.listdiv {
-		color: silver;
-		margin-left: 30px;
-		margin-bottom: 2em;
+  .listdiv {
+    color: silver;
+    margin-left: 30px;
+    margin-bottom: 2em;
 
-		.list {
-			font-size: 12pt;
-			letter-spacing: 1.2pt;
-			text-align: left;
-
-			ul {
-				margin-left: 20px;
-			}
-		}
-	}
+    .list {
+      font-size: 12pt;
+      letter-spacing: 1.2pt;
+      text-align: left;
+      margin-left: 20px;
+    }
+  }
 </style>

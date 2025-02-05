@@ -4,7 +4,7 @@
 	import Header from '$lib/header.svelte';
 	import * as m from '$lib/paraglide/messages';
 
-	let { children }: Props = $props();
+	let { children } = $props();
 
 	const currentYear = new Date().getFullYear();
 </script>

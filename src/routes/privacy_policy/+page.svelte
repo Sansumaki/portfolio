@@ -1,12 +1,14 @@
 <script lang="ts">
 	import Section from '$lib/section.svelte';
+	import { PUBLIC_CONTACT_EMAIL, PUBLIC_CONTACT_PHONE, PUBLIC_CONTACT_ADDRESS } from '$env/static/public';
+	import { formatPhoneNumber } from '$lib/phoneNumberConverter';
 </script>
 
 <Section title="<datenschutzerklaerung />">
 	<h2>Verantwortlicher</h2>
 	<p>
 		Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
-		EU-Datenschutz-Grundverordnung (DSGVO), ist:<br />Sebastian Schmerek
+		EU-Datenschutz-Grundverordnung (DSGVO), ist:<br />{@html PUBLIC_CONTACT_ADDRESS}
 	</p>
 
 	<h2>Ihre Betroffenenrechte</h2>
@@ -130,8 +132,11 @@
 	</p>
 
 	<h3>Empfänger eines Widerspruchs</h3>
-	<p>Sebastian Schmerek</p>
-	<p><a href="mailto:sebastian@schmerek.me">contact@it-san.dev</a></p>
+	<p>{@html PUBLIC_CONTACT_ADDRESS}</p>
+	<p>
+		E-Mail: <a href="mailto:{PUBLIC_CONTACT_EMAIL}">{PUBLIC_CONTACT_EMAIL}</a><br />
+		Mobile: <a href="tel:{PUBLIC_CONTACT_PHONE}">{formatPhoneNumber(PUBLIC_CONTACT_PHONE)}</a>
+	</p>
 
 	<h2>Änderung unserer Datenschutzerklärung</h2>
 	<p>
