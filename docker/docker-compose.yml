@@ -2,8 +2,8 @@
 # docker-compose.yml
 
 services:
-  portfolio:
-    container_name: portfolio
+  external:
+    container_name: external
     # The name of the image that will be created when building this container
     image: website:latest
     build:
@@ -28,8 +28,8 @@ services:
 # Tells docker to use an IP from this range when creating this containers network. Important to avoid IP conflicts on your network.
 # Can be done globally with a setting in docker. 
 networks:
-  portfolio:
+  external:
       driver: default
       ipam:
           config:
-              - subnet: "172.21.0.0/16"
+              - subnet: "172.20.0.0/16"
