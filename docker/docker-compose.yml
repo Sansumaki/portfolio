@@ -1,8 +1,6 @@
 
 # docker-compose.yml
 
-version: "3"
-
 services:
   external:
     container_name: external
@@ -19,7 +17,7 @@ services:
       - TZ=Europa/Berlin
     # Points to a file with the sensitive environment variables
     env_file:
-      - ../.env
+      - /home/githubrunner/.env
     restart: unless-stopped
     #ports:
     #  - 3000:5050
