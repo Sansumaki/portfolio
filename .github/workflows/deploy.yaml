@@ -11,4 +11,4 @@ jobs:
         uses: blag/action-docker-compose@latest
         with:
           # https://docs.docker.com/compose/reference/overview/
-          cli-args: "up --build -f /docker/docker-compose.yml -d"
+          cli-args: "-f /docker/docker-compose.yml up --build -d"
