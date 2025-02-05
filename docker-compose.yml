@@ -17,7 +17,7 @@ services:
       - TZ=Europa/Berlin
     # Points to a file with the sensitive environment variables
     env_file:
-      - /home/githubrunner/.env
+      - .env
     restart: unless-stopped
     #ports:
     #  - 3000:5050
