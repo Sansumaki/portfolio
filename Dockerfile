@@ -1,4 +1,7 @@
 FROM node:18-alpine AS builder
+# pnpm installieren
+RUN npm install -g pnpm
+
 WORKDIR /app
 COPY package*.json .
 RUN pnpm ci
