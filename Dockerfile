@@ -4,7 +4,6 @@ RUN npm install -g pnpm
 
 WORKDIR /app
 COPY package*.json .
-RUN pnpm install --frozen-lockfile
 COPY .. .
 RUN pnpm run build
 RUN pnpm prune --production
