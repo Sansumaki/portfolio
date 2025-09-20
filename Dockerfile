@@ -1,13 +1,11 @@
-FROM node:20-alpine AS builder
-# pnpm installieren
-RUN npm install -g pnpm
+FROM node:20-alpine AS builde
 
 WORKDIR /app
 COPY package*.json .
 COPY .. .
-RUN pnpm install
-RUN pnpm run build
-RUN pnpm prune --production
+RUN npm install
+RUN npm run build
+RUN npm prune --production
 
 FROM node:18-alpine AS website
 WORKDIR /app
