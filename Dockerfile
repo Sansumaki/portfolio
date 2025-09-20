@@ -1,17 +1,32 @@
+# Build-Stage
 FROM node:20-alpine AS builder
 
 WORKDIR /app
-COPY package*.json .
-COPY .. .
-RUN npm install
-RUN npm run build
-RUN npm prune --production
 
-FROM node:20-alpine AS website
+# pnpm installieren
+RUN npm install -g pnpm
+
+# Abhängigkeiten installieren
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+# Quellcode kopieren und bauen
+COPY . .
+RUN pnpm build
+
+# Production-Stage
+FROM node:20-alpine
+
 WORKDIR /app
-COPY --from=builder /app/build build/
-COPY --from=builder /app/node_modules node_modules/
-COPY ../package.json .
+
+# Nur die nötigen Dateien kopieren
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/pnpm-lock.yaml ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/build ./build
+
 EXPOSE 3000
 ENV NODE_ENV=production
-CMD [ "node", "build" ]
+
+# Startbefehl
+CMD ["node", "build"]
