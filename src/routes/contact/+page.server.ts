@@ -1,5 +1,4 @@
 import { env } from '$env/dynamic/private';
-import { PUBLIC_CONTACT_EMAIL } from '$env/static/public';
 import transporter from '$lib/emailSetup';
 import Mail from 'nodemailer/lib/mailer';
 import type { Actions } from '@sveltejs/kit';
@@ -16,7 +15,7 @@ export const actions = {
 
 			const message: Mail.Options = {
 				from: email?.toString() ?? env.CONTACT_EMAIL,
-				to: PUBLIC_CONTACT_EMAIL,
+				to: "info@it-san.dev",
 				cc: email?.toString(),
 				subject: name?.toString() + ' - contact from website',
 				text: (body as string) || '',
